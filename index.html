@@ -12,13 +12,13 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Web Design Mastery | Mary Hardy</title>
+    <title>Herman Portfolio</title>
   </head>
   <body>
     <nav>
       <div class="nav__header">
         <div class="nav__logo">
-          <a href="#">MARY<span>.</span></a>
+          <a href="#">Dede Herman Suryana<span>.</span></a>
         </div>
         <div class="nav__menu__btn" id="menu-btn">
           <i class="ri-menu-line"></i>
@@ -28,11 +28,12 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#intro">Intro</a></li>
         <li><a href="#service">Services</a></li>
-        <li><a href="#client">Clients</a></li>
-        <li><a href="#blog">Blog</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
       </ul>
       <div class="nav__btns">
-        <button class="btn">Hire Me</button>
+        <!-- <button class="btn">Hire Me</button> -->
+        <button class="btn" id="contact-form">Hire Me</button>
       </div>
     </nav>
 
@@ -40,16 +41,18 @@
       <div class="section__container header__container">
         <div class="header__content">
           <h2>Hi, I am</h2>
-          <h1>Mary Hardy</h1>
-          <h3>Digital Marketing Expert</h3>
+          <h1>Dede Herman Suryana</h1>
+            <div class="text-animation">
+              <h2>Data Scientist and Lecturer from Indonesia</h2>
+            </div>
+          <!-- <h3>Data Scientist and Lecturer</h3> -->
           <p>
-            A passionate Digital Marketing Expert dedicated to crafting
-            impactful online strategies and delivering measurable results. Let's
-            elevate your brand together!
+            A passionate Data Scientist and Machine Learning Enthusiast dedicated to building intelligent solutions with Deep Learning, Python, and cutting-edge technologies. Skilled in web development, PHP, and Android, I transform data into actionable insights. Let's innovate together! 🚀
           </p>
           <div class="header__btns">
-            <button class="btn">Download CV</button>
-            <button class="btn">Contact Me</button>
+            <button class="btn" onclick="downloadCV()">Download CV</button>
+            <button class="btn" id="contact-form">Contact Me</button>
+            <!-- <button class="btn">Contact Me</button> -->
           </div>
         </div>
         <div class="header__image">
@@ -60,119 +63,136 @@
 
     <section class="section__container intro__container" id="intro">
       <div class="intro__image">
-        <img src="assets/intro.png" alt="intro" />
+        <img src="assets/Pas_Foto.jpg" alt="intro" />
       </div>
       <div class="intro__content">
         <p class="section__subheader">My Intro</p>
         <h2 class="section__header">About Me</h2>
         <p class="intro__description">
-          I'm Mary Hardy, a dedicated Digital Marketing Expert with a proven
-          track record of helping brands grow their online presence. With
-          expertise in SEO, social media management, content strategy, and
-          analytics, I combine creativity with data-driven insights to deliver
-          impactful campaigns.
+          I am a graduate of S1 Informatics Engineering with a GPA of 3.50 and S2 Electrical Engineering with a GPA of 3.81 from Gunadarma University. Currently, I am studying S3 Information Technology. This strong educational background gave me a deep technical understanding. I have interests and talents in Design, Programming, AI, Machine Learning, DeepLearning, Image Processing, Video Processing, Classification, Natural Language Processing(NLP).
         </p>
         <div class="intro__grid">
           <h5>
             <span><i class="ri-user-line"></i></span> Name
           </h5>
           <span>:</span>
-          <p>Mary Hardy</p>
+          <p>Dede Herman Suryana</p>
           <h5>
-            <span><i class="ri-phone-line"></i></span> Phone
+<!--             <span><i class="ri-phone-line"></i></span> Phone
           </h5>
           <span>:</span>
           <p>09 9876 54321</p>
-          <h5>
+          <h5> -->
             <span><i class="ri-mail-line"></i></span> Email
           </h5>
           <span>:</span>
-          <p>mary.hardy@gmail.com</p>
+          <p>hermansuryana@staff.gunadarma.ac.id</p>
         </div>
         <h4>My Interests</h4>
         <div class="intro__flex">
           <div>
-            <span><i class="ri-headphone-line"></i></span> Music
+            <span><i class="ri-code-line"></i></span> Programming
           </div>
           <div>
-            <span><i class="ri-briefcase-3-line"></i></span> Travel
+            <span><i class="ri-global-line"></i></span> Website
           </div>
           <div>
-            <span><i class="ri-film-line"></i></span> Movie
+            <span><i class="ri-android-line"></i></span> Android
           </div>
           <div>
-            <span><i class="ri-camera-line"></i></span> Photo
+            <span><i class="ri-palette-line"></i></span> UI/UX
           </div>
         </div>
       </div>
     </section>
 
-    <section class="choose">
+    <section class="choose" id="skills">
       <div class="section__container choose__container">
         <p class="section__subheader">Why Choose Me</p>
         <h2 class="section__header">My Experties Area</h2>
         <div class="choose__grid">
           <div class="choose__card">
             <div>
-              <h4>Search Engine Optimization</h4>
-              <h4>80%</h4>
-            </div>
-            <div class="choose__progress" style="--progress: 80%"></div>
-          </div>
-          <div class="choose__card">
-            <div>
-              <h4>Social Media Marketing</h4>
+              <h4>Python</h4>
               <h4>95%</h4>
             </div>
             <div class="choose__progress" style="--progress: 95%"></div>
           </div>
           <div class="choose__card">
             <div>
-              <h4>Content Strategy</h4>
-              <h4>85%</h4>
-            </div>
-            <div class="choose__progress" style="--progress: 85%"></div>
-          </div>
-          <div class="choose__card">
-            <div>
-              <h4>Pay-Per-Click Advertising</h4>
-              <h4>80%</h4>
-            </div>
-            <div class="choose__progress" style="--progress: 80%"></div>
-          </div>
-          <div class="choose__card">
-            <div>
-              <h4>Email Marketing</h4>
-              <h4>75%</h4>
-            </div>
-            <div class="choose__progress" style="--progress: 75%"></div>
-          </div>
-          <div class="choose__card">
-            <div>
-              <h4>Web Analytics</h4>
-              <h4>85%</h4>
-            </div>
-            <div class="choose__progress" style="--progress: 85%"></div>
-          </div>
-          <div class="choose__card">
-            <div>
-              <h4>Brand Strategy</h4>
+              <h4>Machine Learning</h4>
               <h4>95%</h4>
             </div>
             <div class="choose__progress" style="--progress: 95%"></div>
           </div>
           <div class="choose__card">
             <div>
-              <h4>Influencer Marketing</h4>
-              <h4>70%</h4>
+              <h4>Deep Learning</h4>
+              <h4>95%</h4>
             </div>
-            <div class="choose__progress" style="--progress: 70%"></div>
+            <div class="choose__progress" style="--progress: 95%"></div>
+          </div>
+          <div class="choose__card">
+            <div>
+              <h4>HTML</h4>
+              <h4>95%</h4>
+            </div>
+            <div class="choose__progress" style="--progress: 95%"></div>
+          </div>
+          <div class="choose__card">
+            <div>
+              <h4>PHP</h4>
+              <h4>90%</h4>
+            </div>
+            <div class="choose__progress" style="--progress: 90%"></div>
+          </div>
+          <div class="choose__card">
+            <div>
+              <h4>CSS</h4>
+              <h4>85%</h4>
+            </div>
+            <div class="choose__progress" style="--progress: 85%"></div>
+          </div>
+          <div class="choose__card">
+            <div>
+              <h4>Java Script</h4>
+              <h4>80%</h4>
+            </div>
+            <div class="choose__progress" style="--progress: 80%"></div>
+          </div>
+          <div class="choose__card">
+            <div>
+              <h4>Android</h4>
+              <h4>90%</h4>
+            </div>
+            <div class="choose__progress" style="--progress: 90%"></div>
+          </div>
+          <div class="choose__card">
+            <div>
+              <h4>Java</h4>
+              <h4>90%</h4>
+            </div>
+            <div class="choose__progress" style="--progress: 90%"></div>
+          </div>
+          <div class="choose__card">
+            <div>
+              <h4>Figma</h4>
+              <h4>80%</h4>
+            </div>
+            <div class="choose__progress" style="--progress: 80%"></div>
+          </div>
+          <div class="choose__card">
+            <div>
+              <h4>MySQL</h4>
+              <h4>80%</h4>
+            </div>
+            <div class="choose__progress" style="--progress: 80%"></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section__container journey__container">
+    <section class="section__container journey__container" id="education">
       <p class="section__subheader">My Qualifications</p>
       <h2 class="section__header">Awesome Journey</h2>
       <div class="journey__grid">
@@ -183,30 +203,30 @@
           <div class="journey__card">
             <span><i class="ri-circle-fill"></i></span>
             <div>
-              <h4>Master's in Digital Marketing</h4>
-              <h5>Crafting impactful online strategies</h5>
+              <h4>Universitas Gunadarma</h4>
+              <h5>Bachelor of Informatic Engineering</h5>
               <p>
-                <span><i class="ri-calendar-fill"></i></span> 2018-2020
+                <span><i class="ri-calendar-fill"></i></span> 2017-2021
               </p>
             </div>
           </div>
           <div class="journey__card">
             <span><i class="ri-circle-fill"></i></span>
             <div>
-              <h4>Bachelor's in Business Administration</h4>
-              <h5>Marketing & business strategies</h5>
+              <h4>Universitas Gunadarma</h4>
+              <h5>Master of Electrical Engineering</h5>
               <p>
-                <span><i class="ri-calendar-fill"></i></span> 2016-2018
+                <span><i class="ri-calendar-fill"></i></span> 2022-2023
               </p>
             </div>
           </div>
           <div class="journey__card">
             <span><i class="ri-circle-fill"></i></span>
             <div>
-              <h4>Certified SEO Specialist</h4>
-              <h5>Specialized training</h5>
+              <h4>Universitas Gunadarma</h4>
+              <h5>Doctor of Information Technology</h5>
               <p>
-                <span><i class="ri-calendar-fill"></i></span> 2017-2020
+                <span><i class="ri-calendar-fill"></i></span> 2023-Now
               </p>
             </div>
           </div>
@@ -218,30 +238,30 @@
           <div class="journey__card">
             <span><i class="ri-circle-fill"></i></span>
             <div>
-              <h4>Digital Marketing Manager</h4>
-              <h5>XYZ Agency</h5>
+              <h4>Universitas Gunadarma</h4>
+              <h5>Asistant LearnIT</h5>
               <p>
-                <span><i class="ri-calendar-fill"></i></span> 2023-2024
+                <span><i class="ri-calendar-fill"></i></span> 2018-2021
               </p>
             </div>
           </div>
           <div class="journey__card">
             <span><i class="ri-circle-fill"></i></span>
             <div>
-              <h4>Social Media Strategist</h4>
-              <h5>ABC Corp</h5>
+              <h4>PT Carsurin</h4>
+              <h5>Application Development</h5>
               <p>
-                <span><i class="ri-calendar-fill"></i></span> 2021-2023
+                <span><i class="ri-calendar-fill"></i></span> 2022-2022
               </p>
             </div>
           </div>
           <div class="journey__card">
             <span><i class="ri-circle-fill"></i></span>
             <div>
-              <h4>Marketing Intern</h4>
-              <h5>DEF Solutions</h5>
+              <h4>Universitas Gunadarma</h4>
+              <h5>Dosen</h5>
               <p>
-                <span><i class="ri-calendar-fill"></i></span> 2020-2021
+                <span><i class="ri-calendar-fill"></i></span> 2023-Now
               </p>
             </div>
           </div>
@@ -257,48 +277,28 @@
           <span><i class="ri-window-fill"></i></span>
           <h4>Website Design</h4>
           <p>
-            We craft user-friendly interfaces that engage visitors and users and
-            help you achieve your online goals with minimum efforts.
-          </p>
-        </div>
-        <div class="service__card">
-          <span><i class="ri-store-line"></i></span>
-          <h4>E-commerce Solutions</h4>
-          <p>
-            We build secure, scalable, and user-centric online stores that
-            enhance the shopping experience and drive conversions.
+            I design and develop user-friendly websites that provide an engaging experience, ensuring seamless navigation and helping you achieve your online goals effortlessly.
           </p>
         </div>
         <div class="service__card">
           <span><i class="ri-smartphone-line"></i></span>
           <h4>Mobile Development</h4>
           <p>
-            From iOS to Android, we create apps on all platforms that deliver
-            seamless performance and keep users coming back for more.
+            I create Android applications with a user-friendly interface, ensuring smooth performance and an engaging experience that keeps users coming back.
           </p>
         </div>
         <div class="service__card">
-          <span><i class="ri-share-fill"></i></span>
-          <h4>Content Marketing</h4>
+          <span><i class="ri-code-fill"></i></span>
+          <h4>Application Development</h4>
           <p>
-            Our services include creating blog posts, videos, and social media
-            content that drives organic traffic and engagement.
+            I provide services in Python programming, machine learning, and deep learning, developing intelligent solutions that optimize performance and drive impactful results.
           </p>
         </div>
         <div class="service__card">
-          <span><i class="ri-seo-line"></i></span>
-          <h4>SEO</h4>
+          <span><i class="ri-palette-line"></i></span>
+          <h4>UI/UX</h4>
           <p>
-            Our SEO strategies are tailored to your specific goals, helping you
-            reach your target audience and grow your online presence.
-          </p>
-        </div>
-        <div class="service__card">
-          <span><i class="ri-share-circle-line"></i></span>
-          <h4>Digital Marketing</h4>
-          <p>
-            From pay-per-click (PPC) advertising to social media marketing, we
-            ensure your brand stands out in the crowded digital landscape.
+            I offer intuitive and engaging UI/UX design services, creating optimal user experiences for your websites and applications.
           </p>
         </div>
       </div>
@@ -316,7 +316,7 @@
           <button class="btn" data-filter=".game">Games</button>
           <button class="btn" data-filter=".design">Designs</button>
         </div>
-        <div class="portfolio__grid">
+<!--         <div class="portfolio__grid">
           <div class="portfolio__card mix web">
             <img src="assets/project-1.jpg" alt="project" />
           </div>
@@ -334,6 +334,9 @@
           </div>
           <div class="portfolio__card mix design">
             <img src="assets/project-6.jpg" alt="project" />
+          </div> -->
+          <div class="portfolio__grid">
+            <h1 class="coming-soon">COMING SOON</h1>
           </div>
         </div>
       </div>
@@ -343,12 +346,10 @@
       <div class="banner__content">
         <h2 class="section__header">Have A Project On Your Mind</h2>
         <p>
-          Whether it's enhancing your brand's digital presence or launching a
-          targeted marketing campaign, I'm here to help you achieve your goals.
-          Let's collaborate!
+          Have a project in the field of web, programming, machine learning, or UI/UX design? Let's collaborate and create something amazing together! 🚀
         </p>
         <div class="banner__btn">
-          <button class="btn">Contact Me</button>
+          <button class="btn" id="contact-btn">Contact Me</button>
         </div>
       </div>
       <div class="banner__image">
@@ -356,15 +357,15 @@
       </div>
     </section>
 
-    <section class="section__container client__container" id="client">
+<!--     <section class="section__container client__container" id="client">
       <p class="section__subheader">Testimonials</p>
-      <h2 class="section__header">My Client Saying</h2>
+      <h2 class="section__header">My Client Saying</h2> -->
       <!-- Slider main container -->
-      <div class="swiper">
+      <!-- <div class="swiper"> -->
         <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
+        <!-- <div class="swiper-wrapper"> -->
           <!-- Slides -->
-          <div class="swiper-slide">
+<!--           <div class="swiper-slide">
             <div class="client__card">
               <div class="client__header">
                 <div class="client__details">
@@ -500,17 +501,20 @@
               </p>
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+<!--         <div class="swiper-pagination"></div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="blog" id="blog">
+<!--     <section class="blog" id="blog">
       <div class="section__container blog__container">
         <p class="section__subheader">Blog</p>
         <h2 class="section__header">Latest Updates</h2>
-        <div class="blog__grid">
+          <div class="portfolio__grid">
+            <h1 class="coming-soon">COMING SOON</h1>
+          </div>
+ --><!--         <div class="blog__grid">
           <div class="blog__card">
             <img src="assets/blog-1.jpg" alt="blog" />
             <div>
@@ -533,26 +537,93 @@
                 10 Proven Digital Marketing Strategies to Grow Your Business
               </h4>
             </div>
-          </div>
-        </div>
+          </div> -->
+<!--         </div>
       </div>
-    </section>
+    </section> -->
+
+    <!-- *************************Contact Section************************* -->
+<section class="contact" id="contact">
+    <p class="title">Contact <span>Me</span></p>
+    <p class="contact-subtitle">Write your message to me</p>
+    <form id="contact-form">
+        <div class="input-box">
+            <input type="text" name="from_name" id="name" required placeholder="Full Name">
+            <input type="email" name="reply_to" id="email" required placeholder="Email">
+        </div>
+        <div class="input-box">
+            <input type="tel" name="phone" id="phone" required placeholder="Mobile Number">
+            <input type="text" name="subject" id="subject" required placeholder="Subject">
+        </div>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+        <input type="submit" value="Send Message" class="btn">
+    </form>
+</section>
+
+<!-- EmailJS Library -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script>
+    (function(){
+        emailjs.init("Vg4ZFKPYb2BF9vnEo"); // Ganti dengan Public Key Anda
+    })();
+
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Mencegah reload halaman
+
+        const formData = {
+            to_name: "Dede Herman Suryana", // Nama admin (harus sesuai dengan EmailJS template)
+            from_name: document.getElementById("name").value, // Nama pengirim
+            reply_to: document.getElementById("email").value, // Email pengirim
+            phone: document.getElementById("phone").value, // Nomor telepon pengirim
+            subject: document.getElementById("subject").value, // Subjek pesan
+            message: document.getElementById("message").value // Isi pesan
+        };
+
+        emailjs.send("dudung25", "template1", formData)
+            .then(function(response) {
+                alert("✅ Message sent successfully!");
+                console.log("SUCCESS!", response.status, response.text);
+                document.getElementById("contact-form").reset(); // Reset form setelah berhasil
+            }, function(error) {
+                alert("❌ Failed to send message. Please check your EmailJS settings.");
+                console.error("FAILED...", error);
+            });
+    });
+</script>
 
     <footer>
       <div class="section__container footer__container">
-        <h4>Mary Hardy</h4>
+        <h4>Dede Herman Suryana</h4>
         <ul class="footer__socials">
-          <a href="#"><i class="ri-twitter-fill"></i></a>
-          <a href="#"><i class="ri-linkedin-fill"></i></a>
-          <a href="#"><i class="ri-behance-fill"></i></a>
-          <a href="#"><i class="ri-dribbble-line"></i></a>
-          <a href="#"><i class="ri-pinterest-line"></i></a>
+          <a href="https://github.com/hippokidz"><i class="ri-github-fill"></i></a>
+          <a href="https://www.linkedin.com/in/hrmnsryn/"><i class="ri-linkedin-fill"></i></a>
+          <a href="https://www.instagram.com/hrmn.sryn/"><i class="ri-instagram-fill"></i></a>
+          <a href="https://scholar.google.com/citations?user=BMBcVTsAAAAJ&hl=id&oi=ao"><i class="ri-graduation-cap-line"></i></a>
         </ul>
       </div>
       <div class="footer__bar">
-        Copyright © 2024 Web Design Mastery. All rights reserved.
+        Copyright © 2025 HippoKidz. All rights reserved.
       </div>
     </footer>
+
+    <script>
+      document.getElementById("contact-form").addEventListener("click", function() {
+          const contactSection = document.getElementById("contact");
+          if (contactSection) {
+              contactSection.scrollIntoView({ behavior: "smooth" });
+          }
+      });
+    </script>
+
+    <script>
+        document.getElementById("contact-btn").addEventListener("click", function() {
+            const contactSection = document.getElementById("contact");
+            if (contactSection) {
+                contactSection.scrollIntoView({ behavior: "smooth" });
+            }
+        });
+    </script>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>

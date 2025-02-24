@@ -147,7 +147,7 @@ header {
 }
 
 .header__image img {
-  max-width: 350px;
+  max-width: 200px;
   margin-inline: auto;
   margin-top: 2rem;
 }
@@ -161,7 +161,7 @@ header {
 
 .header__content h1 {
   margin-bottom: 1rem;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 800;
   color: var(--secondary-color);
   line-height: 5rem;
@@ -204,7 +204,7 @@ header {
 .intro__image {
   position: relative;
   isolation: isolate;
-  max-width: 350px;
+  max-width: 200px;
   margin-inline: auto;
   padding: 4px;
   overflow: hidden;
@@ -498,6 +498,12 @@ header {
   gap: 1rem;
 }
 
+.coming-soon {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+
 .portfolio__card img {
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -641,6 +647,124 @@ header {
   color: var(--secondary-color);
 }
 
+/* Contact Section */
+.contact {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 50px;
+    color: var(--primary-color); /* Sesuai dengan background putih */
+    text-align: center;
+}
+
+
+/*.section__subheader {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  text-align: center;
+}*/
+
+/*.section__header {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  text-align: center;
+}*/
+
+/* Subjudul */
+.contact-subtitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+/* Form Container */
+section form {
+    max-width: 70rem;
+    text-align: center;
+    margin: 1rem auto 3rem auto;
+    padding: 2rem;
+    background: #f0f0f0; /* Abu-abu lebih gelap agar terlihat */
+    border: 2px solid black; /* Garis hitam untuk grid */
+    border-radius: 10px;
+}
+
+/* Kotak Input */
+.input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Input Animasi */
+.input-box input {
+    width: 49%;
+}
+
+/* Style Input dan Textarea */
+input, textarea {
+    width: 100%;
+    padding: 1.2rem;
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid black; /* Garis hitam untuk grid */
+    outline: none;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    opacity: 1; /* Pastikan terlihat */
+    transform: translateY(0); /* Hilangkan efek tersembunyi */
+}
+
+/* Animasi Muncul */
+section.start-animation input,
+section.start-animation textarea {
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Placeholder Styling */
+input::placeholder, textarea::placeholder {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Fokus Input */
+input:focus, textarea:focus {
+    border-color: #ff00ee;
+    box-shadow: 0 0 5px #ff00ee;
+}
+
+/* Tombol Kirim */
+.contact .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+    background: black; /* Warna hitam agar kontras */
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+}
+
+.contact .btn:hover {
+    background: #ff00ee;
+    box-shadow: 0 0 10px #ff00ee;
+}
+
+/*ENDDDD*/
+
 .footer__container {
   text-align: center;
 }
@@ -761,6 +885,38 @@ header {
   .header__content :is(h2, h1, h3, p) {
     text-align: left;
   }
+
+.text-animation {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  overflow: hidden; /* Efek ketikan */
+  white-space: nowrap;
+  border-right: 3px solid var(--primary-color); /* Simulasi kursor */
+  animation: typing 10s steps(42) infinite, blink 0.7s step-end infinite;
+}
+
+/* Efek Ketikan */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+/* Efek Blink untuk Kursor */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 
   .header__btns {
     justify-content: flex-start;

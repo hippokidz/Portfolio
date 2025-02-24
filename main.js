@@ -108,3 +108,14 @@ ScrollReveal().reveal(".blog__card", {
   ...scrollRevealOption,
   interval: 500,
 });
+
+
+function downloadCV() {
+  const cvPath = "assets/pdf/CV_Dede Herman.pdf"; // Pastikan path sesuai dengan lokasi file
+  const link = document.createElement("a");
+  link.href = cvPath;
+  link.download = "Dede_Herman_Suryana_CV.pdf"; // Nama file yang diunduh
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
